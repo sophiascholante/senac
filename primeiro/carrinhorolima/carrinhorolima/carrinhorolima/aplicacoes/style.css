@@ -1,0 +1,199 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-color: rgb(105, 233, 59);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 70%;
+    border: 1px solid #124965;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: url('imagem.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1c7e87;
+    flex-wrap: wrap;
+}
+
+#search-form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+}
+
+.results-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-height: 60%;
+    overflow-y: auto;
+    border-top: 1px solid #124965;
+}
+
+.result-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.result-item.azul {
+    background-color: lightblue;
+    border-left: 10px solid blue;
+}
+
+.result-item.vermelho {
+    background-color: lightcoral;
+    border-left: 10px solid red;
+}
+
+.result-item.verde {
+    background-color: lightgreen;
+    border-left: 10px solid green;
+}
+
+.result-item.amarelo {
+    background-color: lightyellow;
+    border-left: 10px solid yellow;
+}
+
+.result-item.preto {
+    background-color: gray;
+    border-left: 10px solid black;
+}
+
+.result-item.laranja {
+    background-color: peachpuff;
+    border-left: 10px solid orange;
+}
+
+.result-item.branco {
+    background-color: rgb(23, 79, 66);
+    border-left: 10px solid rgb(17, 75, 48);
+}
+
+.result-item.roxo {
+    background-color: lavender;
+    border-left: 10px solid purple;
+}
+
+.result-item.marrom {
+    background-color: wheat;
+    border-left: 10px solid brown;
+}
+
+.result-item.cinza {
+    background-color: lightgray;
+    border-left: 10px solid gray;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #124965;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0d3a4c;
+}
+
+.instagram-link {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e4405f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        height: 60%;
+    }
+
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-box, .submit-button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .instagram-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 50%;
+    }
+
+    .input-box, .submit-button {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+
+    .instagram-link {
+        padding: 8px 16px;
+    }
+}
