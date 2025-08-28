@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Botão padrão */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+/* Seção de destaque (Home) */
+.destaque {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Produtos em destaque / catálogo */
+.produtos-destaque, 
+.catalogo {
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.grid-produtos article {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.grid-produtos article:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste das imagens dos produtos */
+.grid-produtos img {
+    width: auto;          /* não força a largura */
+    max-width: 100%;      /* limita dentro da caixinha */
+    height: 250px;        /* altura fixa para padronizar */
+    object-fit: cover;    /* corta o excesso sem distorcer */
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Carrinho */
+.carrinho {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.carrinho table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carrinho th, 
+.carrinho td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrinho th {
+    background: #f39c12;
+    color: #fff;
+}
+
+.carrinho tr:hover {
+    background: #f9f9f9;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #333;
+    color: #fff;
+}
