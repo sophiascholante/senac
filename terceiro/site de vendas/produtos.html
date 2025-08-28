@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja - Produtos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojinha da Soso - Produtos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Minha Loja</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Lojinha da Soso</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="produtos.html">Produtos</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="catalogo">
-            <h2>Nosso Catálogo</h2>
-            <div class="grid-produtos">
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Produto 1">
-                    <h3>Produto 1</h3>
-                    <p>R$ 99,90</p>
-                    <button class="btn">Adicionar ao Carrinho</button>
-                </article>
+  <main class="catalogo">
+    <h2>Catálogo Completo</h2>
+    <div class="grid-produtos">
+      <article>
+        <img src="https://i.pinimg.com/736x/d0/6d/65/d06d658f7e2982c8909eb74197416254.jpg" alt="Produto 1">
+        <h3>Hello Kitty de Pelúcia</h3>
+        <p>R$ 99,90</p>
+        <a href="carrinho.html" class="btn">Adicionar</a>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/736x/91/25/9d/91259d01d5dd9f867fb51e4c5ecc73cd.jpg" alt="Produto 2">
+        <h3>Pantufas Kitty</h3>
+        <p>R$ 349,90</p>
+        <a href="carrinho.html" class="btn">Adicionar</a>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/736x/83/da/c9/83dac9b5aad1c2487e2c557ad6f8b433.jpg" alt="Produto 3">
+        <h3>Caneca Hello Kitty</h3>
+        <p>R$ 79,90</p>
+        <a href="carrinho.html" class="btn">Adicionar</a>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/736x/9c/0f/34/9c0f347f5a2c62c3b0cbbeee55c7a8f1.jpg" alt="Produto 4">
+        <h3>Mochila Hello Kitty</h3>
+        <p>R$ 199,90</p>
+        <a href="carrinho.html" class="btn">Adicionar</a>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/736x/f8/34/40/f83440f9a9e2b89434e70a6a4582f30e.jpg" alt="Produto 5">
+        <h3>Estojo Rosa</h3>
+        <p>R$ 59,90</p>
+        <a href="carrinho.html" class="btn">Adicionar</a>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/736x/cf/95/ca/cf95cafa2b969b0a4090bc06b0333320.jpg" alt="Produto 6">
+        <h3>Garrafinha Hello Kitty</h3>
+        <p>R$ 129,90</p>
+        <a href="carrinho.html" class="btn">Adicionar</a>
+      </article>
+    </div>
+  </main>
 
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Produto 2">
-                    <h3>Produto 2</h3>
-                    <p>R$ 149,90</p>
-                    <button class="btn">Adicionar ao Carrinho</button>
-                </article>
-
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Produto 3">
-                    <h3>Produto 3</h3>
-                    <p>R$ 199,90</p>
-                    <button class="btn">Adicionar ao Carrinho</button>
-                </article>
-
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Produto 4">
-                    <h3>Produto 4</h3>
-                    <p>R$ 79,90</p>
-                    <button class="btn">Adicionar ao Carrinho</button>
-                </article>
-
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Produto 5">
-                    <h3>Produto 5</h3>
-                    <p>R$ 249,90</p>
-                    <button class="btn">Adicionar ao Carrinho</button>
-                </article>
-
-                <article>
-                    <img src="https://via.placeholder.com/150" alt="Produto 6">
-                    <h3>Produto 6</h3>
-                    <p>R$ 59,90</p>
-                    <button class="btn">Adicionar ao Carrinho</button>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 - Minha Loja. Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 - Sophia Scholante. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

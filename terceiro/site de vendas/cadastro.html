@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lojinha da Soso - Login</title>
+  <title>Lojinha da Soso - Cadastro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="produtos.html">Produtos</a></li>
         <li><a href="carrinho.html">Carrinho</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-        <li><a class="active" href="login.html">Login</a></li>
+        <li><a class="active" href="cadastro.html">Cadastro</a></li>
+        <li><a href="login.html">Login</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
@@ -23,15 +23,24 @@
   </header>
 
   <main class="destaque">
-    <h2>Entrar</h2>
+    <h2>Crie sua conta</h2>
     <form>
+      <label for="nome">Nome completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
       <label for="email">E-mail:</label><br>
       <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone" required><br><br>
+
+      <label for="endereco">Endereço:</label><br>
+      <input type="text" id="endereco" name="endereco" required><br><br>
 
       <label for="senha">Senha:</label><br>
       <input type="password" id="senha" name="senha" required><br><br>
 
-      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn">Cadastrar</button>
     </form>
   </main>
 
