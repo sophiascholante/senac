@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoClassificador</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="imagem.jpg" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>♻️ EcoClassificador</h1>
+    <p>Identifique o tipo de lixo e o descarte correto</p>
+  </header>
+
+  <main>
+    <section class="classificador">
+      <h2>Classifique seu material</h2>
+      <div class="search">
+        <input id="q" type="text" placeholder="Ex: papel, vidro, pilha..." />
+        <button id="btnSearch">Buscar</button>
+      </div>
+      <p id="aiMsg"></p>
+      <div id="results"></div>
+
+      <div class="upload">
+        <h3>Ou envie uma imagem</h3>
+        <input type="file" id="imgFile" accept="image/*" />
+        <button id="btnIdentify">Identificar</button>
+      </div>
+    </section>
+
+    <section class="mapa">
+      <h2>Pontos de coleta próximos</h2>
+      <div id="map"></div>
+      <div id="mapLegend"></div>
+      <ul id="pointsList"></ul>
+    </section>
+
+    <section class="sugestoes">
+      <h2>Envie uma sugestão</h2>
+      <form id="suggestForm">
+        <input id="sug-name" placeholder="Nome do material" />
+        <textarea id="sug-desc" placeholder="Descrição ou observação"></textarea>
+        <button type="submit">Salvar sugestão</button>
+      </form>
+      <p id="sug-msg"></p>
+      <button id="exportCSV">Exportar sugestões (CSV)</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong>Sophia Scholante</strong> 💚 | Projeto EcoClassificador</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
